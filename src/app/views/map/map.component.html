@@ -1,1 +1,11 @@
-<p>map works!</p>
+<highcharts-chart
+  id="container"
+  [Highcharts]="Highcharts"
+  [constructorType]="chartConstructor"
+  [options]="chartOptions"
+  class="map"
+>
+</highcharts-chart>
+<button (click)="logout()" class="logout" nz-button nzType="primary" nzDanger>
+  Выйти <i nz-icon nzType="logout" nzTheme="outline"></i>
+</button>

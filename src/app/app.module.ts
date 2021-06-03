@@ -17,6 +17,9 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzMessageModule } from 'ng-zorro-antd/message';
+
+import { HighchartsChartModule } from 'highcharts-angular';
 
 import { LoginComponent } from './views/login/login.component';
 import { MapComponent } from './views/map/map.component';
@@ -37,7 +40,9 @@ registerLocaleData(ru);
     NzIconModule,
     NzSpaceModule,
     NzFormModule,
+    NzMessageModule,
     NzButtonModule,
+    HighchartsChartModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: ru_RU }],
   bootstrap: [AppComponent],

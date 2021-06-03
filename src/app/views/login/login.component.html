@@ -2,7 +2,7 @@
   <form
     nz-form
     [formGroup]="validateForm"
-    (ngSubmit)="submitForm()"
+    (ngSubmit)="submitForm($event)"
     class="login__form"
   >
     <h1 class="login__form-title">Войти в систему</h1>
